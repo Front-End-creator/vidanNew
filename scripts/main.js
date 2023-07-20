@@ -81,7 +81,7 @@ function replacePhoto(sliderDisplay){
         }
         setTimeout(function() {
             for (const photos of photo){
-                photos.src = "http://127.0.0.1:5500/images/" + variableSlider[current][counter];
+                photos.src = "https://' + document.domain + '/images/" + variableSlider[current][counter];
                 counter++;
                 photos.classList.remove("active");
             }
